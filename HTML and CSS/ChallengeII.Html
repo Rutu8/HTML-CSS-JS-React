@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-II</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <h1>Personal Information Form</h1>
+    <form>
+        <fieldset> 
+            <!---------------Example of in form fieldset due to fieldset the form content came in block square-------------------->
+            <!-----------------------------Legend give us name of the form at the corner of square box which become due to fieldset------------------------------->
+            
+            <legend>Form Example</legend> 
+            <br>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" required name="name"/>
+            <br>
+            <h2>Language</h2>
+            <label for="en">English</label>
+            <input type="checkbox" id="en" name="language" value="English"/><br>
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" id="hindi" name="language" value="Hindi"/><br>
+            <label for="marathi">Marathi</label>
+            <input type="checkbox" id="marathi" name="language" value="Marathi"/><br>
+            <br>
+            <h3>Gender</h3>
+            <label for="m">Male</label>
+            <input type="radio" id="m" name="Gender" value="Male"><br>
+            <label for="f">Female</label>
+            <input type="radio" id="f" name="Gender" value="Female"><br>
+            <label for="no">Not to say</label>
+            <input type="radio" id="no" name="Gender" value="Not to say"><br>
+            <br>
+            <!----------------------To take input file such as pdf or word or any document example resume----------------------------->
+            <h4>Submit Resume</h4>
+            <label for="file">Select file</label>
+            <input type="file" id="file" name="file">
+            <br>
+            <div>
+                <!--------------------------- To create a Option dropdown list-------------------------->
+                <h5>Select Country</h5>
+                <label for="Select Your Country"></label>
+                <select name="Country" id="Country">
+                    <option value="india">India</option>
+                    <option value="usa">America</option>
+                    <option value="africa">Africa</option>
+                    <option value="japan">Japan</option>
+                    <option value="china">China</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="britan">England</option>
+                    <option value=" ">Selected disabled Country</option>
+                </select>
+            </div>
+            <br>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+    <p><strong><em>Go to Home</em></strong></p>
+    <a href="C:\Users\Admin\Desktop\htmlprogram\HTML CSS JS\Practice.html">Go to Home</a>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-I</title>
+    <!-----------------------Here Style tag is used this is Html Syle Tag---------------------------->
+    <!---------------------------This used to arrange table in correct format and content in also correct format-------------------------------------------------->
+    <!----------------------------due to padding content space format top, bottom, right, left and table look great--------------------------------------------------------->
+    <style>
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+    </style>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<!----------------------------To add background Colour Here we add aqua background color--------------------------------------->
+<body bgcolor="aqua">
+    <div>
+        <h1>Here is First Challenge To create a Table by using HTML Tags</h1>
+        <tbody>
+        <table border="2">
+        <!--------------------------rowspan and colspan merging rows ans cols respective-------------------------->
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Grade</th>
+            <td colspan="2">Try next time</td>
+        </tr>
+        <tr>
+            <td>Priti</td>
+            <td>History</td>
+            <td>95</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Karu</td>
+            <td>Accontancy</td>
+            <td>91</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Sakshi</td>
+            <td>Economy</td>
+            <td>75</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Sonu</td>
+            <td>Science</td>
+            <td>60</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>Jack</td>
+            <td>History</td>
+            <td>9</td>
+            <td>F</td>
+            <td rowspan="2">Better Luck next Time</td> 
+        </tr>
+        <tr>
+            <td>Jack</td>
+            <td>Economy</td>
+            <td>9</td>
+            <td>F</td>      
+        </tr>
+        </table>
+        </tbody>
+     </div>
+     <h2>go to home page</h2>
+     <a href="C:\Users\Admin\Desktop\htmlprogram\HTML CSS JS\Practice.html" alt="home page">home page</a>   
+</body>
+</html>
