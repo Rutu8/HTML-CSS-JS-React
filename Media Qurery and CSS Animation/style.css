@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type:none;
+    text-decoration: none;
+    color: white;
+}
+.content{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-links{
+    display: float;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+@media screen and (max-width:75px) {
+    .hamburger{
+        display: block;
+    }
+    .nav-links{
+        display: none ;
+    }
+}
+
+
+
+

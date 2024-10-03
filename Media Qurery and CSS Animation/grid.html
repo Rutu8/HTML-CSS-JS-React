@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .grid-wrapper{
+            background-color: goldenrod;
+            margin: 50px;
+            display: grid;
+            height: 500px;
+            /* grid-template-columns: 200px 100px 150px;
+            grid-template-rows: 200px 150px 70px; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+        .el-1{
+            background-color: red;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .el-1 img{
+            width: 100px;
+            height: 100px;
+        }
+        .el-2{
+            background-color: yellow;
+        }
+        .el-3{
+            background-color: green;
+        }
+        .el-4{
+            background-color: blue;
+        }
+        .el-5{
+            background-color: purple;
+        }
+        .el-6{
+            background-color: orange;
+        }
+        .el-7{
+            background-color: brown;
+        }
+        .el-8{
+            background-color:red ;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="grid-wrapper">
+            <div class="el el-1">
+            <img src="images/image.jpg" alt="image"/>
+            <section>
+                <h1>HTML</h1>
+                <p>grid</p>
+            </section>
+            </div>
+            <div class="el el-2">CSS</div>
+            <div class="el el-3">JavaScript</div>
+            <div class="el el-4">React</div>
+            <div class="el el-5">Angular</div>
+            <div class="el el-6">Flex</div>
+            <div class="el el-7">Grid</div>
+            <div class="el el-8">Float</div>
+            <div>test</div>
+        </div>
+    </div>
+    <div>
+        <a href="index.html">Go To Home Page</a>
+    </div>
+    
+</body>
+</html>
