@@ -127,6 +127,72 @@
     </div>
     <!------------Aligning Columns and Gutters------------>
     <!-----------Align Columns------------->
+    <div class="row bg-secondary align-items-end" style="height: 200px;">
+      <div class="col bg-danger">Box1</div>
+      <div class="col bg-info align-self-start">Box2</div>
+      <div class="col bg-primary align-self-end">Box3</div>
+    </div>
+    <!----------Gutters----------->
+    <div class="row bg-secondary gx-5 gy-5">
+      <div class="col-6">
+        <div class="p-3 border border-info">Box1</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border border-info">Box2</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border border-info">Box3</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border border-info">Box4</div>
+      </div>
+    </div>
+    <!-------------------flexbox----------------->
+    <div class="container-fluid mt-5">
+      <div class="d-flex bg-dark flex-row flex-lg-row-reverse text-white p-2 mb-2">
+        <div class="p-2 bg-info">Box1</div>
+        <div class="p-2 bg-danger">Box2</div>
+        <div class="p-2 bg-warning">Box3</div>
+      </div>
+      <!---------Flex Grow and Shrink Features of Flex---------->
+      <div class="d-flex bg-dark flex-row flex-lg-column bg-dark text-white p-2 mb-2">
+        <div class="p-2 bg-info">Box1</div>
+        <div class="p-2 bg-danger flex-grow-1">Box2</div>
+        <div class="p-2 bg-warning flex-shrink-0">Box3</div>
+      </div>
+      <div class="d-inline-flex bg-dark flex-row text-white p-2 mb-2">
+        <div class="p-2 bg-info">Box1</div>
+        <div class="p-2 bg-danger">Box2</div>
+        <div class="p-2 bg-warning">Box3</div>
+      </div>
+    </div>
+    <!-------List Group by flex-------->
+    <!-----Basic Li------->
+    <div class="d-flex bg-dark flex-row flex-lg-column bg-dark text-white p-2 mb-2">
+    <div class="container mt-5">
+      <ul class="list-group">
+        <li class="list-group-item">Roses</li>
+        <li class="list-group-item">Lotus</li>
+        <li class="list-group-item">Sunflower</li>
+      </ul>
+    </div>
+  </div>
+    <!----------list advanced flex----------->
+    <div class="d-flex bg-dark flex-row flex-lg-column bg-dark text-white p-2 mb-2">
+    <div class="container mt-5">
+      <ul class="list-group list-group-push mt-5">
+        <li class="list-group-item" aria-disabled="true">HTML</li>
+        <li class="list-group-item">CSS</li>
+        <li class="list-group-item">JavaScript</li>
+        <li class="list-group-item">React</li>
+        <li class="list-group-item"><span class="badge text-bg-primary rounded-pill">id</span>Angular</li>
+        <li class="list-group-item d-flex justify-content-between">C Language<span class="badge text-bg-primary">14</span></li>
+      </ul>
+    </div>
+    <p><a class="link-info link-offset link-underline-opacity-25 link-udnerline-opacity-100-hover" href="Form.html">Go Toward Form</a></p>
+  </div>
+
+
 
 
 
