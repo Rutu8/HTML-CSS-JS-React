@@ -37,3 +37,60 @@ if(grade<45)
     console.log("You Can go to next class");
 }
 
+var day;
+day='monday';
+switch(day){
+    case 'saturday':
+        console.log('I like Saturday');
+        break;
+    case 'monday':
+        console.log('I do not like monday');
+        break;
+    case 'tuesday':
+            console.log('I feel do not feel fresh');
+            break;
+    case 'wensday':
+            console.log('welcome to wensday');
+            break;
+    case 'thursday':
+            console.log('thursday feeling better');
+            break;
+    case 'friday':
+        console.log('I really like friday because tommarrow day after is sunday');
+        break;
+    default:
+        console.log('I do not know day');
+        break;   
+}
+
+//Loops in Statement
+//1)while loop
+//2)for loop
+var num=1;
+while(num<11){
+    console.log(num);
+    num++;//num=num+1
+}
+
+for(var number=1; number<11; number++)
+{
+    console.log(number);
+}
+//3)Contunue with break statements in javascript
+console.log('Contunue statements');
+for(var i=1;i<=10;i++){
+    if(i%2!==0)
+        continue;
+        console.log(i);
+}
+console.log('break statement')
+for(var i=1; i<=10;i++)
+{
+    if(i%2==0){
+        console.log(i);
+        break;
+    }
+}
+
+
+//Functions
