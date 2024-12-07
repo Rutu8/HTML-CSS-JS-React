@@ -94,3 +94,20 @@ for(var i=1; i<=10;i++)
 
 
 //Functions
+function my_func(){
+    console.log("Hello");
+}
+my_func();
+
+function addTwoNumbers(){
+    var a=10;
+    var b=20;
+    var c=a+b;
+    console.log(c);
+}
+addTwoNumbers();
+
+//function calling and Recursion
+
+
+
