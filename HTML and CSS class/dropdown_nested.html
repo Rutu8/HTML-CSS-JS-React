@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        .btn {
+            background-color: burlywood;
+            width: 100px;
+            height: 50px;
+            border-radius: 20px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: slategray;
+            color: white;
+        }
+
+        .dropdown ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            left: 10px;
+        }
+
+        .dropdown-content a {
+            text-decoration: none;
+            color: black;
+            background-color: beige;
+        }
+
+        .dropdown-content a:hover {
+            background-color: greenyellow;
+            color: black;
+        }
+
+        .dropdown {
+            position: relative;
+            display: block;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            z-index: 3;
+            display: none;
+        }
+
+        .dropdown2 ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            left: 80px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content2 a {
+            text-decoration: none;
+            background-color: aqua;
+        }
+
+        .dropdown-content2 a:hover {
+            background-color: yellow;
+            color: red;
+        }
+
+        .dropdown2 {
+            position: relative;
+            display: block;
+        }
+
+        .dropdown-content2 {
+            position: absolute;
+            z-index: 5;
+            display: none;
+            min-width: 200px;
+            top: 0;
+        }
+
+        .dropdown2:hover .dropdown-content2 {
+            display: block;
+        }
+
+        .dropdown3 {
+            position: relative;
+            display: block;
+        }
+
+        .dropdown-content3 {
+            position: absolute;
+            z-index: 6544;
+            top: 0;
+            left: 200px;
+            display: none;
+            min-width: 50px;
+        }
+
+        .dropdown-content3 a {
+            background-color: burlywood;
+        }
+
+        .dropdown-content3 a:hover {
+            color: white;
+            background-color: teal;
+        }
+
+        .dropdown3:hover .dropdown-content3 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dropdown CSS</h1>
+    <div class="dropdown">
+        <button class="btn">Click</button>
+        <ul class="dropdown-content">
+            <li><a href="">Products</a></li>
+            <li><a href="">Information</a></li>
+            <li class="dropdown2">
+                <a href="">Services</a>
+                <ul class="dropdown-content2">
+                    <li><a href="">Website Development</a></li>
+                    <li><a href="">Mobile App Development</a></li>
+                    <li><a href="">ERP and CRM Development</a></li>
+                    <li class="dropdown3"><a href="">Web Hosting</a>
+                        <div class="dropdown-content3">
+                            <a href="">Windows</a>
+                            <a href="">Linux</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
